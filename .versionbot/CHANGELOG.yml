@@ -1,4 +1,19 @@
 - commits:
+    - subject: Include firmware for AX200NGW and AX201NGW WiFi 6 adapters
+      hash: 3c363fe77975e64d4676240d0f80404220569a6d
+      body: |
+        - AX200NGW: iwlwifi-cc-a0 and ibt-20-1-3
+        - AX201NGW: iwlwifi-quz-a0-hr-b0 and ibt-19-0-4
+      footer:
+        Changelog-entry: Include firmware for AX200NGW and AX201NGW WiFi 6 adapters
+        changelog-entry: Include firmware for AX200NGW and AX201NGW WiFi 6 adapters
+        Signed-off-by: Michal Toman <michalt@balena.io>
+        signed-off-by: Michal Toman <michalt@balena.io>
+      author: Michal Toman
+      nested: []
+  version: 2.82.12+rev2
+  date: 2021-07-29T15:07:29.033Z
+- commits:
     - subject: Update meta-balena from v2.81.1 to v2.82.12
       hash: 1aa9619841d815d3b7f08973e4df11b9f7d40905
       body: |
