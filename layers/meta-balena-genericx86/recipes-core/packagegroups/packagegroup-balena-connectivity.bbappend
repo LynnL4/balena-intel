@@ -20,6 +20,11 @@ CONNECTIVITY_FIRMWARES_append_genericx86-64 = " \
 	linux-firmware-iwlwifi-quz-a0-hr-b0 \
 "
 
+CONNECTIVITY_FIRMWARES_append_odyssey = " \
+	linux-firmware-ibt-19-0-4 \
+	linux-firmware-iwlwifi-quz-a0-hr-b0 \
+"
+
 CONNECTIVITY_FIRMWARES_append_surface-go = " \
 	linux-firmware-ath10k-qca6174 \
 	linux-firmware-i915-kbl \

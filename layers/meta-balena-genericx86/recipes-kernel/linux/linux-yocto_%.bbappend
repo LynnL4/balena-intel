@@ -184,9 +184,11 @@ BALENA_CONFIGS[rtl_wifi]=" \
 BALENA_CONFIGS_remove_surface-pro-6 = "overlayfs"
 BALENA_CONFIGS_remove_surface-go = "overlayfs"
 BALENA_CONFIGS_remove_genericx86-64-ext = "overlayfs"
+BALENA_CONFIGS_append_odyssey-x86 = "overlayfs"
 
 # install aufs support even when BALENA_STORAGE is overlay2
 BALENA_CONFIGS_append_genericx86-64-ext = " aufs"
+BALENA_CONFIGS_append_odyssey-x86 = " aufs"
 
 # Add CAN support (requested by customer)
 BALENA_CONFIGS_append = " enable_can"
@@ -408,12 +410,14 @@ BALENA_CONFIGS[i40e] = " \
 #
 # Do not include debugging info in kernel and modules
 #
+BALENA_CONFIGS_append_odyssey-x86 = " no-debug-info"
 BALENA_CONFIGS_append_genericx86-64-ext = " no-debug-info"
 BALENA_CONFIGS[no-debug-info] ?= " \
     CONFIG_DEBUG_INFO=n \
     "
 
 # eth controller on Intel NUC 11
+BALENA_CONFIGS_append_odyssey-x86 = " igc"
 BALENA_CONFIGS_append_genericx86-64 = " igc"
 BALENA_CONFIGS[igc] = " \
     CONFIG_IGC=m \

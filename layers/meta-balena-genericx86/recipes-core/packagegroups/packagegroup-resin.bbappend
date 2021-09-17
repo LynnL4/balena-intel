@@ -6,3 +6,6 @@ RDEPENDS_${PN}_append_surface-go = " \
 RDEPENDS_${PN}_append_genericx86-64-ext = " \
     aufs-util-auplink \
 "
+RDEPENDS_${PN}_append_odyssey-x86 = " \
+    aufs-util-auplink \
+"

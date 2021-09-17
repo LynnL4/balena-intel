@@ -10,3 +10,9 @@ IMAGE_INSTALL_append_genericx86-64-ext =" \
 "
 
 IMAGE_ROOTFS_SIZE_genericx86-64-ext = "1024000"
+
+IMAGE_INSTALL_append_odyssey-x86 =" \
+    linux-firmware                        \
+"
+
+IMAGE_ROOTFS_SIZE_odyssey-x86 = "1024000"
